@@ -1,0 +1,309 @@
+@import '../../global/global.scss';
+
+body {
+    background: $main-purple;
+}
+
+.container-outside {
+    height: 100vh;
+}
+
+.container-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+
+        @include pad {
+            padding: 20px;
+        }
+
+        h3 {
+            display: inline-block;
+        }
+
+        .score {
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 500;
+            color: $main-purple;
+            background-color: #fff;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0%;
+
+        .pictures {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            @include pad {
+                flex-direction: column;
+            }
+
+            img {
+                width: 300px;
+                height: 150px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 4px rgba(0, 0, 0, .25);
+                object-fit: cover;
+                margin: 0 20px;
+                cursor: pointer;
+
+                @include pad {
+                    margin: 20px 0;
+                }
+            }
+
+            img:hover {
+                transform: scale(0.99);
+            }
+
+            img:active {
+                transform: scale(0.95);
+            }
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            margin: 20px;
+            margin-top: 60px;
+
+            p {
+                text-align: center;
+            }
+
+            .test-description {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                @include pad {
+                    flex-direction: column;
+                }
+
+                img {
+                    margin-right: 15px;
+
+                    @include pad {
+                        margin-right: 0;
+                        margin-bottom: 15px;
+                    }
+                }
+
+            }
+
+            .begin-description {
+                margin-top: 30px;
+                color: $green;
+            }
+        }
+
+        .button-area {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+
+
+            button {
+                @include button
+            }
+
+            @include button-status
+        }
+    }
+
+    .footer {
+        margin: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .loading-bar {
+            position: relative;
+            max-width: 800px;
+            padding: 5px 0;
+            width: 80%;
+            background-color: $secondary-purple;
+            text-align: center;
+            border-radius: 20px;
+
+            .loading {
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 5%;
+                height: 100%;
+                border-radius: 20px 0 0 20px;
+                padding: 5px 0;
+                background-color: $loading-blue;
+                transition: all 0.5s ease-in-out 0s;
+            }
+
+            span {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .result {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-bottom: 120px;
+
+        .user-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                padding-bottom: 20px;
+                font-size: 24px;
+            }
+
+            p {
+                padding: 20px 0;
+            }
+
+            input {
+                width: 70%;
+                margin: 20px;
+                margin-bottom: 40px;
+                padding: 10px 20px;
+                font-size: 30px;
+                text-align: center;
+                font-weight: 500;
+                border: 1px solid $white;
+                border-radius: 10px;
+                background-color: $main-purple;
+                outline: none;
+            }
+
+            button {
+                @include button
+            }
+
+            @include button-status
+        }
+
+        .score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 40px;
+            }
+
+            .result-data {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 40px;
+
+                span {
+                    font-size: 36px;
+                    font-weight: 500;
+                }
+
+                .vertical-bar {
+                    width: 5px;
+                    height: 40px;
+                    background-color: $white;
+                    margin: 0 40px;
+                }
+            }
+
+            .description {
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 60px;
+
+                span {
+                    font-size: 26px;
+                }
+            }
+
+            .social-media {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 60px;
+
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 5px
+                    }
+
+                    @include button
+                }
+
+                @include button-status
+            }
+
+            button {
+                @include button
+            }
+
+            @include button-status
+        }
+
+        a {
+            position: fixed;
+            bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: 400;
+            cursor: pointer;
+            text-decoration: none;
+
+            img {
+                margin-left: 10px;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+}

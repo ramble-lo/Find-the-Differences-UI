@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+
+$main-purple: #7758F4;
+$secondary-purple: #9075FF;
+$hover-purple: #6D51DC;
+$active-purple: #5D44C0;
+$green: #92FFAA;
+$white: #FFFFFF;
+$loading-blue:#2037AD;
+
+@mixin pad {
+    @media(max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width:375px) {
+        @content;
+    }
+}
+
+@mixin button {
+    color: $white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+    border: 1px solid $white;
+    border-radius: 10px;
+    background-color: $main-purple;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+@mixin button-status {
+    button:hover {
+        background-color: $hover-purple;
+        border-color: rgba(255, 255, 255, .7);
+    }
+
+    button:active {
+        background-color: $active-purple;
+        transform: scale(0.95);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3,
+p,
+span,
+input,
+a {
+    color: $white;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+.green-box {
+    border: 5px solid $green !important;
+}
