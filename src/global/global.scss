@@ -31,6 +31,7 @@ $loading-blue:#2037AD;
     background-color: $main-purple;
     margin: 0 20px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 @mixin button-status {
@@ -42,6 +43,16 @@ $loading-blue:#2037AD;
     button:active {
         background-color: $active-purple;
         transform: scale(0.95);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
@@ -63,4 +74,16 @@ a {
 
 .green-box {
     border: 5px solid $green !important;
+}
+
+.none {
+    display: none;
+}
+
+.correctPicture {
+    z-index: 1;
+}
+
+.wrongPicture {
+    z-index: 0;
 }

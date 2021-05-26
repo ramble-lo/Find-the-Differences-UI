@@ -45,6 +45,10 @@ body {
         display: flex;
         flex-direction: column;
         flex: 1 1 0%;
+        animation-name: fadeIn;
+        animation-duration: .3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
 
         .pictures {
             display: flex;
@@ -52,30 +56,55 @@ body {
             align-items: center;
             justify-content: center;
 
-            @include pad {
-                flex-direction: column;
+            .first-box {
+                transform: translateX(170px);
             }
 
-            img {
+            .second-box {
+                transform: translateX(-170px);
+            }
+
+            @include pad {
+                // height: 380px;
+                flex-direction: column;
+
+                .first-box {
+                    transform: translateX(0px);
+                    transform: translateY(95px);
+                }
+
+                .second-box {
+                    transform: translateX(0px);
+                    transform: translateY(-95px);
+                }
+            }
+
+            .img-box {
+                transition: transform 0.4s ease-in-out;
+                margin: 0 20px;
                 width: 300px;
                 height: 150px;
-                border-radius: 10px;
-                box-shadow: 10px 10px 4px rgba(0, 0, 0, .25);
-                object-fit: cover;
-                margin: 0 20px;
-                cursor: pointer;
 
                 @include pad {
                     margin: 20px 0;
                 }
-            }
 
-            img:hover {
-                transform: scale(0.99);
-            }
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                    // box-shadow: 10px 10px 4px rgba(0, 0, 0, .25);
+                    object-fit: cover;
+                    cursor: pointer;
+                }
 
-            img:active {
-                transform: scale(0.95);
+                // img:hover {
+                //     // transform: scale(0.99);
+                // }
+
+                img:active {
+                    transform: scale(0.95);
+                }
             }
         }
 
@@ -87,6 +116,10 @@ body {
             font-size: 16px;
             margin: 20px;
             margin-top: 60px;
+
+            @include pad {
+                margin-top: 20px;
+            }
 
             p {
                 text-align: center;
@@ -103,6 +136,8 @@ body {
                 }
 
                 img {
+                    width: 18px;
+                    height: 18px;
                     margin-right: 15px;
 
                     @include pad {
@@ -144,6 +179,8 @@ body {
         align-items: center;
 
         .loading-bar {
+            display: flex;
+            align-items: center;
             position: relative;
             max-width: 800px;
             padding: 5px 0;
@@ -165,7 +202,10 @@ body {
             }
 
             span {
-                font-size: 14px;
+                display: inline-block;
+                width: 100%;
+                font-size: 16px;
+                z-index: 1;
             }
         }
 

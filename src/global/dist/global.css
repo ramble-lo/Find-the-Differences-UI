@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -17,4 +25,16 @@ a {
 
 .green-box {
   border: 5px solid #92FFAA !important;
+}
+
+.none {
+  display: none;
+}
+
+.correctPicture {
+  z-index: 1;
+}
+
+.wrongPicture {
+  z-index: 0;
 }

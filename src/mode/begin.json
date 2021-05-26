@@ -1,0 +1,35 @@
+[
+    {
+        "name":"Step1",
+        "answer":1,
+        "picture":true,
+        "testDescription":"Please choose the correct interface",
+        "beginDescription":"Click the green area 01",
+        "compareButton":false,
+        "nextButton":false,
+        "firstPicture":"https://i.imgur.com/P1gABES.png",
+        "secondPicture":"https://i.imgur.com/ew5wvoX.png"
+    },
+    {
+        "name":"Step2",
+        "answer":1,
+        "picture":false,
+        "testDescription":"Vertical alignment of text",
+        "beginDescription":"Click the green area 02",
+        "compareButton":true,
+        "nextButton":false,
+        "firstPicture":"https://i.imgur.com/P1gABES.png",
+        "secondPicture":"https://i.imgur.com/ew5wvoX.png"
+    },
+    {
+        "name":"Step3",
+        "answer":1,
+        "picture":false,
+        "testDescription":"Vertical alignment of text",
+        "beginDescription":"Click the green area 03",
+        "compareButton":false,
+        "nextButton":true,
+        "firstPicture":"https://i.imgur.com/P1gABES.png",
+        "secondPicture":"https://i.imgur.com/ew5wvoX.png"
+    }
+]
