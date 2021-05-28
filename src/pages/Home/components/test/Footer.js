@@ -10,8 +10,6 @@ const Footer = ({
     return (
         <div className="footer">
             <div className="loading-bar">
-                {arrayIndex}
-                {arrayLength}
                 <div className="loading" style={{width:loadingWidth}}></div>
                 <span>{loadingName} {step}/{arrayLength}</span>
             </div>

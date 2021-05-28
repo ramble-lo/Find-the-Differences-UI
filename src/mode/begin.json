@@ -15,7 +15,7 @@
         "answer":1,
         "picture":false,
         "testDescription":"Vertical alignment of text",
-        "beginDescription":"Click the green area 02",
+        "beginDescription":"Press the green area 02",
         "compareButton":true,
         "nextButton":false,
         "firstPicture":"https://i.imgur.com/P1gABES.png",

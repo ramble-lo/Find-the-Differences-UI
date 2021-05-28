@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import Correct from '../../../../../icons/Correct.svg'
-import Wrong from '../../../../../icons/Wrong.svg'
 
 const Content = ({
     data,
@@ -27,9 +26,6 @@ const Content = ({
         if(answer === 1){
             firstStyle = {zIndex:"1"}
             icon = Correct
-        }else if(answer === 2){
-            secondStyle = {zIndex:"1"}
-            icon = Wrong
         }
         if(index === 0){
             beginIndexEvent = 1;
@@ -42,31 +38,7 @@ const Content = ({
         setUserAnswer(userAnswerClick);
         setDescriptionIcon(icon);
     }
-    const handleClickSecondPicture = () => {
-        console.log('handleClickSecondPicture');
-        let firstStyle
-        let secondStyle
-        let beginIndexEvent = 0
-        let userAnswerClick = 2
-        let icon
-        if(answer === 1){
-            firstStyle = {zIndex:"1"}
-            icon = Wrong
-        }else if(answer === 2){
-            secondStyle = {zIndex:"1"}
-            icon = Correct
-        }
-        if(index === 0){
-            beginIndexEvent = 1;
-        }
-        setFirstCorrectStyle(firstStyle);
-        setSecondCorrectStyle(secondStyle);
-        setButtonArea(true);
-        setPictureOverlapping(true);
-        setBeginIndex(pre=> pre + beginIndexEvent);
-        setUserAnswer(userAnswerClick);
-        setDescriptionIcon(icon);
-    }
+
     const handleClickNext = () => {
         let beginFinished = false
         if(data.length - 1 === index){
@@ -110,7 +82,7 @@ const Content = ({
                     <img onClick={handleClickFirstPicture} src="https://i.imgur.com/P1gABES.png" alt="pictures" className={data[index].picture ? "green-box" : null} />
                 </div>
                 <div className={pictureOverlapping ? "img-box second-box" : "img-box"} style={secondCorrectStyle}>
-                    <img onClick={handleClickSecondPicture} src="https://i.imgur.com/ew5wvoX.png" alt="pictures" />
+                    <img  src="https://i.imgur.com/ew5wvoX.png" alt="pictures" />
                 </div>                
                 
             </div>

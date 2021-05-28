@@ -222,6 +222,7 @@ body {
   background-color: #9075FF;
   text-align: center;
   border-radius: 20px;
+  overflow: hidden;
 }
 .container-inside .footer .loading-bar .loading {
   display: block;
@@ -229,7 +230,6 @@ body {
   top: 0;
   width: 5%;
   height: 100%;
-  border-radius: 20px 0 0 20px;
   padding: 5px 0;
   background-color: #2037AD;
   transition: all 0.5s ease-in-out 0s;

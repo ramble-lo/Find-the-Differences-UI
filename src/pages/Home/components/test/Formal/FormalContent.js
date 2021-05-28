@@ -6,21 +6,27 @@ const Content = ({
     data,
     testIndex,
     setTestIndex,
-    setLevelIndex
+    setLevelIndex,
+    setCurrentTime,
+    startTime,
+    userAnswer,
+    setUserAnswer
 }) => {
     const [buttonArea, setButtonArea] = useState(false);
     const [pictureOverlapping, setPictureOverlapping] = useState(true);
+    const [isPictureClicked, setIsPictureClicked] = useState(false);
     const [firstCorrectStyle, setFirstCorrectStyle] = useState({});
     const [secondCorrectStyle, setSecondCorrectStyle] = useState({});
-    const [userAnswer, setUserAnswer] = useState(0);
+
     const [descriptionIcon, setDescriptionIcon] = useState({})
     const [descriptionText, setDescriptionText] = useState("Please choose the correct interface")
 
     let answer = data[testIndex].answer
     let testDescription = data[testIndex].testDescription
     let introDescription = "Please choose the correct interface"
+
     // console.log('testIndex:',testIndex);
-    const clickPitcure = (userClick) => {
+    const selectedPitcure = (userClick) => {
         let firstStyle
         let secondStyle
         let userAnswerClick = userClick
@@ -29,6 +35,10 @@ const Content = ({
         answer === userAnswerClick ? icon = Correct : icon = Wrong;
         answer === 1 ? firstStyle = {zIndex:"1"} : secondStyle = {zIndex:"1"};
 
+
+        setCurrentTime(new Date().getTime());
+
+        setIsPictureClicked(true)
         setFirstCorrectStyle(firstStyle);
         setSecondCorrectStyle(secondStyle);
         setButtonArea(true);
@@ -38,17 +48,25 @@ const Content = ({
         setDescriptionText(testDescription);
     }
     const handleClickFirstPicture = () => {
+        if(isPictureClicked){
+            return
+        }
         console.log('handleClickFirstPicture');
-        clickPitcure(1);
+        selectedPitcure(1);
     }
     const handleClickSecondPicture = () => {
+        if(isPictureClicked){
+            return
+        }
         console.log('handleClickSecondPicture');
-        clickPitcure(2);
+        selectedPitcure(2);
     }
     const handleClickNext = () => {
         let formalIndexEvent = 0;
         let plusLevelIndex = 0;
         let resetTestIndex = 0;
+
+        startTime.current = new Date().getTime()
 
         //### 1.code review : Changing array
         if(testIndex < data.length - 1){
@@ -59,6 +77,7 @@ const Content = ({
             resetTestIndex = testIndex
         }
         // ###
+        setIsPictureClicked(false)
         setTestIndex(pre => pre + formalIndexEvent - resetTestIndex);
         setLevelIndex(pre => pre + plusLevelIndex);
         setButtonArea(false);
@@ -71,13 +90,14 @@ const Content = ({
         let secondStyle
         let hidden = {zIndex:"1",visibility: "hidden"}
         let visible = {zIndex:"1",visibility: "visible"}
-        if(event.type === "mousedown"){
+        if(event.type === "mousedown" || event.type === "touchstart"){
             if(answer === 1){
                 firstStyle = hidden
             }else if(answer === 2){
                 secondStyle = hidden
+                console.log('secondStyle = hidden');
             }
-        }else if(event.type === "mouseup"){
+        }else if(event.type === "mouseup" || event.type === "touchend"){
             if(answer === 1){
                 firstStyle = visible
             }else if(answer === 2){
