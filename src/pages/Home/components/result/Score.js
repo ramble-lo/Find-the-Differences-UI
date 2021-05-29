@@ -1,6 +1,6 @@
 import React from 'react';
-import Facebook from '../../../icons/Facebook.svg';
-import Twitter from '../../../icons/Twitter.svg';
+import Facebook from '../../../../icons/Facebook.svg';
+import Twitter from '../../../../icons/Twitter.svg';
 
 const Score = () => {
     return (

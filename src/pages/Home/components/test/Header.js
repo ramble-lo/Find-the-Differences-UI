@@ -8,7 +8,7 @@ const Header = ({
 }) => {
     const [finalScore, setFinalScore] = useState(0);
     const timeScoreArray =useRef([]);
-    let displayFinalScore
+    let displayFinalScore = "00000"
 
     if(finalScore === 0){
         displayFinalScore = "00000"
@@ -48,7 +48,7 @@ const Header = ({
             return 40
         }else if(time <= 96){
             return 20
-        }else{
+        }else if(time > 96){
             return 10
         }
     }

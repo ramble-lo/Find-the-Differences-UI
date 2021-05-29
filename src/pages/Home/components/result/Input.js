@@ -5,7 +5,7 @@ const Input = () => {
         <div className="user-input">
             <h3 className="title">Find the <br/>Differences UI</h3>
             <p className="description">Please entry your name</p>
-            <input type="text" maxlength="10"/>
+            <input type="text" maxLength="10"/>
             <button className="button">Submit</button>
         </div>
     )

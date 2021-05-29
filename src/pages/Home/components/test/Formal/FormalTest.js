@@ -5,7 +5,7 @@ import Footer from '../Footer'
 
 import data from '../../../../../mode/test.json'
 
-const FormalTest = () => {
+const FormalTest = ({setIsFormalFinished}) => {
     const [testIndex, setTestIndex] = useState(0);
     const [levelIndex, setLevelIndex] = useState(0);
     const [currentTime, setCurrentTime] = useState(0);
@@ -59,10 +59,12 @@ const FormalTest = () => {
                 testIndex={testIndex}
                 setTestIndex={setTestIndex}
                 setLevelIndex={setLevelIndex}
+                levelIndex={levelIndex}
                 setCurrentTime={setCurrentTime}
                 startTime={startTime}
                 userAnswer={userAnswer}
-                setUserAnswer={setUserAnswer}/>
+                setUserAnswer={setUserAnswer}
+                setIsFormalFinished={setIsFormalFinished}/>
             <Footer 
                 arrayIndex={testIndex}
                 arrayLength={formalDataArrayLength}

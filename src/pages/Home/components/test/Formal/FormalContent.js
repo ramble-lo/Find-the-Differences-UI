@@ -6,11 +6,13 @@ const Content = ({
     data,
     testIndex,
     setTestIndex,
+    levelIndex,
     setLevelIndex,
     setCurrentTime,
     startTime,
     userAnswer,
-    setUserAnswer
+    setUserAnswer,
+    setIsFormalFinished
 }) => {
     const [buttonArea, setButtonArea] = useState(false);
     const [pictureOverlapping, setPictureOverlapping] = useState(true);
@@ -65,6 +67,7 @@ const Content = ({
         let formalIndexEvent = 0;
         let plusLevelIndex = 0;
         let resetTestIndex = 0;
+        let formalFinished = false
 
         startTime.current = new Date().getTime()
 
@@ -73,8 +76,15 @@ const Content = ({
             formalIndexEvent = 1
         }
         if(testIndex === data.length - 1){
+            //is last level ?
+            console.log('levelIndex:',levelIndex);
             plusLevelIndex = 1
             resetTestIndex = testIndex
+            if(levelIndex === 2){
+                plusLevelIndex = 0
+                formalFinished = true
+                console.log('formalFinished:',formalFinished);
+            }
         }
         // ###
         setIsPictureClicked(false)
@@ -84,6 +94,7 @@ const Content = ({
         setPictureOverlapping(true);
         setDescriptionText(introDescription);
         setUserAnswer(0);
+        setIsFormalFinished(formalFinished);
     }
     const handleClickCompare = (event) => {
         let firstStyle

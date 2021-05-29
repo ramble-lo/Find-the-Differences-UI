@@ -3,11 +3,12 @@ import React,{useState} from 'react'
 import BeginTest from './Begin/BeginTest'
 import FormalTest from './Formal/FormalTest'
 
-const Test = () => {
+const Test = ({setIsFormalFinished}) => {
     const [isBeginFinished, setIsBeginFinished] = useState(false)
+    
     return (
         <>
-            {isBeginFinished ? <FormalTest/> : <BeginTest setIsBeginFinished={setIsBeginFinished}/>}
+            {isBeginFinished ? <FormalTest setIsFormalFinished={setIsFormalFinished}/> : <BeginTest setIsBeginFinished={setIsBeginFinished}/>}
         </>
     )
 }
