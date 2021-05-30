@@ -247,16 +247,16 @@ body {
   align-items: center;
   height: 100vh;
   margin-bottom: 120px;
-  animation-name: fadeIn;
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
 }
 .container-inside .result .user-input {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 .container-inside .result .user-input .title {
   padding-bottom: 20px;
@@ -303,6 +303,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 .container-inside .result .score .title {
   font-size: 24px;

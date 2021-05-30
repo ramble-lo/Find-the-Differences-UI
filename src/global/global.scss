@@ -46,6 +46,13 @@ $loading-blue:#2037AD;
     }
 }
 
+@mixin transition-fadeIn {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className="container-outside">
             <div className="container-inside">
-                {isFormalFinished ? <Result/> : <Test setIsFormalFinished={setIsFormalFinished}/>}
+                {isFormalFinished ? <Result setIsFormalFinished={setIsFormalFinished}/> : <Test setIsFormalFinished={setIsFormalFinished}/>}
             </div>
         </div>
     )
