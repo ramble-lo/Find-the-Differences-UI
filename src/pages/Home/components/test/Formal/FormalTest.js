@@ -28,7 +28,7 @@ const FormalTest = ({setIsFormalFinished}) => {
 
     useEffect(() => {
         // let costTime = 0
-        console.log(`currentTime:${currentTime}`);
+
         //跳過第一次載入
         if(currentTime !== 0){
             let costTime = (currentTime - startTime.current)/1000;

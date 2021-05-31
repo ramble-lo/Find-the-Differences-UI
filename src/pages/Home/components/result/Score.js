@@ -62,7 +62,10 @@ const Score = ({setIsFormalFinished}) => {
                 <div className="vertical-bar"></div>
                 <span className="result-time">{playerTime}</span>
             </div>
-            <p className="description">You have won <span>70%</span> of challengers</p>
+            {/* <p className="description">You have won <span>70%</span> of challengers</p> */}
+            <p className="description">Rank:<span style={{backgroundColor:"#CD7F32"}}>Brozne</span> </p>
+            {/* <p className="description">Rank:<span style={{backgroundColor:"#C0C0C0"}}>Silver</span> </p>
+            <p className="description">Rank:<span style={{backgroundColor:"#FFD700"}}>Brozne</span> </p> */}
             <div className="social-media">
                 <button><img src={Facebook} alt="facebook" />Facebook</button>
                 <button><img src={Twitter} alt="twitter" />Twitter</button>

@@ -286,12 +286,14 @@ body {
             }
 
             .description {
-                font-size: 18px;
+                font-size: 26px;
                 font-weight: 400;
                 text-align: center;
                 margin-bottom: 60px;
 
                 span {
+                    // background-color: rgb(255, 240, 29);
+                    padding: 0 10px;
                     font-size: 26px;
                 }
             }

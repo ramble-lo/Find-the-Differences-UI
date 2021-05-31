@@ -31,8 +31,6 @@ const Header = ({
                 score = calculateScore(Math.floor(timeScore))
             }
         }
-        console.log(timeScoreArray);
-
         dispatch(addScore(score));//update score
     }, [timeScoreArray,answer,startTime,userAnswer,currentTime,dispatch])
 

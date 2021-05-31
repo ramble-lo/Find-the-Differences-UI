@@ -330,12 +330,13 @@ body {
   margin: 0 40px;
 }
 .container-inside .result .score .description {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 60px;
 }
 .container-inside .result .score .description span {
+  padding: 0 10px;
   font-size: 26px;
 }
 .container-inside .result .score .social-media {

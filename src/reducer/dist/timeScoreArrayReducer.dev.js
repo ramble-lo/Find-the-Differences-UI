@@ -20,20 +20,13 @@ var timeScoreArray = function timeScoreArray() {
 
   switch (action.type) {
     case 'addTimeScoreArray':
-      console.log('addTimeScoreArray reducer執行'); //...//
-      // return state  + action.payload;
-
       return [].concat(_toConsumableArray(state), [action.payload]);
 
     case 'clearTimeScoreArray':
-      console.log('clearTimeScoreArray reducer執行'); //...//
-      // return state  + action.payload;
-
       return [];
 
     default:
       return state;
-    //有被調用的都被顯示出來
   }
 };
 

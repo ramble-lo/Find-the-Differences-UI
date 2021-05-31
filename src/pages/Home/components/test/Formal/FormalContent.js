@@ -27,7 +27,6 @@ const Content = ({
     let testDescription = data[testIndex].testDescription
     let introDescription = "Please choose the correct interface"
 
-    // console.log('testIndex:',testIndex);
     const selectedPitcure = (userClick) => {
         let firstStyle
         let secondStyle
@@ -53,14 +52,12 @@ const Content = ({
         if(isPictureClicked){
             return
         }
-        console.log('handleClickFirstPicture');
         selectedPitcure(1);
     }
     const handleClickSecondPicture = () => {
         if(isPictureClicked){
             return
         }
-        console.log('handleClickSecondPicture');
         selectedPitcure(2);
     }
     const handleClickNext = () => {
@@ -77,13 +74,11 @@ const Content = ({
         }
         if(testIndex === data.length - 1){
             //is last level ?
-            console.log('levelIndex:',levelIndex);
             plusLevelIndex = 1
             resetTestIndex = testIndex
             if(levelIndex === 2){
                 plusLevelIndex = 0
                 formalFinished = true
-                console.log('formalFinished:',formalFinished);
             }
         }
         // ###
@@ -106,7 +101,6 @@ const Content = ({
                 firstStyle = hidden
             }else if(answer === 2){
                 secondStyle = hidden
-                console.log('secondStyle = hidden');
             }
         }else if(event.type === "mouseup" || event.type === "touchend"){
             if(answer === 1){

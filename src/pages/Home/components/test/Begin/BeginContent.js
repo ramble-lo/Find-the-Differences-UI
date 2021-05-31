@@ -17,7 +17,6 @@ const Content = ({
     let answer = data[index].answer
 
     const handleClickFirstPicture = () => {
-        console.log('handleClickFirstPicture');
         let firstStyle
         let secondStyle
         let beginIndexEvent = 0
@@ -45,7 +44,6 @@ const Content = ({
             beginFinished = true
         }
         setIsBeginFinished(beginFinished)
-        console.log('beginFinished:',beginFinished);
     }
     const handleClickCompare = (event) => {
         let firstStyle
