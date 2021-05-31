@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Find-the-Differences-UI/static/css/main.8bf22388.chunk.css",
-    "main.js": "/Find-the-Differences-UI/static/js/main.3f2e05a7.chunk.js",
-    "main.js.map": "/Find-the-Differences-UI/static/js/main.3f2e05a7.chunk.js.map",
+    "main.js": "/Find-the-Differences-UI/static/js/main.f13916f4.chunk.js",
+    "main.js.map": "/Find-the-Differences-UI/static/js/main.f13916f4.chunk.js.map",
     "runtime-main.js": "/Find-the-Differences-UI/static/js/runtime-main.63f4070f.js",
     "runtime-main.js.map": "/Find-the-Differences-UI/static/js/runtime-main.63f4070f.js.map",
     "static/js/2.dc6a4247.chunk.js": "/Find-the-Differences-UI/static/js/2.dc6a4247.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.63f4070f.js",
     "static/js/2.dc6a4247.chunk.js",
     "static/css/main.8bf22388.chunk.css",
-    "static/js/main.3f2e05a7.chunk.js"
+    "static/js/main.f13916f4.chunk.js"
   ]
 }
