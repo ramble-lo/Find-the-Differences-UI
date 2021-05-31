@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './index.scss';
 
 import Result from './components/result/index';
@@ -8,9 +8,10 @@ import ReactGA from 'react-ga';
 import KEY from '../../config.json'
 
 const Home = () => {
-    ReactGA.initialize(KEY.TRACKING_ID);
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    // console.log(window.location.pathname);
+    useEffect(() => {
+        ReactGA.initialize(KEY.TRACKING_ID);
+        ReactGA.pageview(window.location.pathname);
+    }, [])
     const [isFormalFinished, setIsFormalFinished] = useState(false)
     return (
         <div className="container-outside">
