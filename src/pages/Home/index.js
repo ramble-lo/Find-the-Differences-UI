@@ -8,9 +8,9 @@ import ReactGA from 'react-ga';
 import KEY from '../../config.json'
 
 const Home = () => {
-    ReactGA.initialize(KEY.MEASUREMENT_ID);
+    ReactGA.initialize(KEY.TRACKING_ID);
     ReactGA.pageview(window.location.pathname + window.location.search);
-    console.log(window.location.pathname);
+    // console.log(window.location.pathname);
     const [isFormalFinished, setIsFormalFinished] = useState(false)
     return (
         <div className="container-outside">
