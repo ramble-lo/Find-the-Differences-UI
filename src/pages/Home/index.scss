@@ -5,14 +5,13 @@ body {
 }
 
 .container-outside {
-    height: 100vh;
+    // height: 100vh;
 }
 
 .container-inside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
 
     .header {
         display: flex;
@@ -147,7 +146,10 @@ body {
 
             .begin-description {
                 margin-top: 30px;
-                color: $green;
+
+                p {
+                    color: $green;
+                }
             }
         }
 
@@ -233,10 +235,60 @@ body {
                 padding: 20px 0;
             }
 
-            input {
+            .occupation-input {
+                display: flex;
+                flex-direction: row;
                 width: 70%;
-                margin: 20px;
-                margin-bottom: 40px;
+                justify-content: center;
+
+                .vertical-alignment-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    label {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        width: 100%;
+                        margin: 10px 0;
+                        color: $white;
+                        cursor: pointer;
+
+                        .radio-input {
+                            display: none;
+                        }
+
+                        .radio {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            border: 1px solid $white;
+                            margin-right: 20px;
+                            padding: 2px;
+                        }
+
+                        .radio::after {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            display: block;
+                            background-color: $white;
+                            transition: .2s all;
+                            transform: scale(0);
+                        }
+
+                        .radio-input:checked+.radio::after {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+
+            .name-input {
+                width: 70%;
+                margin-bottom: 20px;
                 padding: 10px 20px;
                 font-size: 30px;
                 text-align: center;

@@ -12,10 +12,14 @@ const Home = () => {
         ReactGA.initialize(KEY.TRACKING_ID);
         ReactGA.pageview(window.location.pathname);
     }, [])
-    const [isFormalFinished, setIsFormalFinished] = useState(false)
+    const [isFormalFinished, setIsFormalFinished] = useState(false);
+    useEffect(() => {
+        console.log("Hi!🙋‍♂️\n\nI hope you can enjoy this game.\nAlthough you can find the answer from the DevTools.\nBut that ultimately lost the fun of the game.\nHave a good time!");
+    }, [])
+    
     return (
         <div className="container-outside">
-            <div className="container-inside">
+            <div className="container-inside" style={{height:window.innerHeight}}>
                 {isFormalFinished ? <Result setIsFormalFinished={setIsFormalFinished}/> : <Test setIsFormalFinished={setIsFormalFinished}/>}
             </div>
         </div>

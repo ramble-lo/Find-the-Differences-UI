@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.clearScore = exports.clearTimeScoreArray = exports.addTimeScoreArray = exports.addScore = void 0;
+exports.clearUserAnswereArray = exports.addUserAnswereArray = exports.clearTimeScoreArray = exports.addTimeScoreArray = exports.clearScore = exports.addScore = void 0;
 
 var addScore = function addScore(value) {
   return {
@@ -13,6 +13,15 @@ var addScore = function addScore(value) {
 };
 
 exports.addScore = addScore;
+
+var clearScore = function clearScore(value) {
+  return {
+    type: 'clearScore',
+    payload: value
+  };
+};
+
+exports.clearScore = clearScore;
 
 var addTimeScoreArray = function addTimeScoreArray(value) {
   return {
@@ -32,11 +41,20 @@ var clearTimeScoreArray = function clearTimeScoreArray(value) {
 
 exports.clearTimeScoreArray = clearTimeScoreArray;
 
-var clearScore = function clearScore(value) {
+var addUserAnswereArray = function addUserAnswereArray(value) {
   return {
-    type: 'clearScore',
+    type: 'addUserAnswereArray',
     payload: value
   };
 };
 
-exports.clearScore = clearScore;
+exports.addUserAnswereArray = addUserAnswereArray;
+
+var clearUserAnswereArray = function clearUserAnswereArray(value) {
+  return {
+    type: 'clearUserAnswereArray',
+    payload: value
+  };
+};
+
+exports.clearUserAnswereArray = clearUserAnswereArray;

@@ -89,7 +89,9 @@ const Content = ({
                     {userAnswer !== 0 ? <img src={descriptionIcon} alt={descriptionIcon} /> : null }
                     <p>{data[index].testDescription}</p>
                  </div>
-                 <p className="begin-description">{data[index].beginDescription}</p>
+                 <div className="begin-description">
+                     <p>{data[index].beginDescription}</p>
+                 </div>
             </div>
             {buttonArea ? 
             <div className="button-area">

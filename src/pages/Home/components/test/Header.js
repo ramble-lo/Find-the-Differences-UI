@@ -5,14 +5,12 @@ import {addScore} from '../../../../actions/action'
 const Header = ({
     answer,
     userAnswer,
-    currentTime,
-    startTime,
 }) => {
     const dispatch = useDispatch()
 
     let finalScore = useSelector(state=>state.score);
     let timeScoreArray = useSelector(state=>state.timeScoreArray);
-    let displayFinalScore = "00000"
+    let displayFinalScore
     if(finalScore === 0){
         displayFinalScore = "00000"
     }else if(finalScore < 100){
@@ -21,6 +19,8 @@ const Header = ({
         displayFinalScore = "00" + finalScore
     }else if(finalScore < 10000){
         displayFinalScore = "0" + finalScore
+    }else{
+        displayFinalScore = finalScore
     }
 
     useEffect(() => {
@@ -32,23 +32,22 @@ const Header = ({
             }
         }
         dispatch(addScore(score));//update score
-    }, [timeScoreArray,answer,startTime,userAnswer,currentTime,dispatch])
+    }, [timeScoreArray])
 
-    
     const calculateScore = (time)=> {
         if(time <= 2){
             return 640
-        }else if(time <= 6){
+        }else if(time <= 4){
             return 320
-        }else if(time <= 12){
+        }else if(time <= 8){
             return 160
-        }else if(time <= 24){
+        }else if(time <= 16){
             return 80
-        }else if(time <= 48){
+        }else if(time <= 32){
             return 40
-        }else if(time <= 96){
+        }else if(time <= 64){
             return 20
-        }else if(time > 96){
+        }else if(time > 64){
             return 10
         }
     }

@@ -1,0 +1,249 @@
+{
+    "easy":[
+        {
+            "questionNumber":1,
+            "testDescription":"Horizontal alignment of the text.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/QYDV4a0.png",
+            "secondPicture":"https://i.imgur.com/y0ACDp6.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":2,
+            "testDescription":"Vertical alignment of the icon.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/WeI2xrh.png",
+            "secondPicture":"https://i.imgur.com/dw6lOX0.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":3,
+            "testDescription":"Padding of the text field.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/iAHmzzJ.png",
+            "secondPicture":"https://i.imgur.com/hoNWNKe.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":4,
+            "testDescription":"Horizontal alignment of the list.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/i39OR73.png",
+            "secondPicture":"https://i.imgur.com/dtx9RV6.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":5,
+            "testDescription":"Horizontal alignment of the list.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/g6Dns6M.png",
+            "secondPicture":"https://i.imgur.com/CTcJ7eG.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":6,
+            "testDescription":"Padding left of the text.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/xbJXQtm.png",
+            "secondPicture":"https://i.imgur.com/WCcIb4W.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":7,
+            "testDescription":"Horizontal alignment of the radio button.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/GoQ80mB.png",
+            "secondPicture":"https://i.imgur.com/hQ29mkH.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":8,
+            "testDescription":"Border radius of the button.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/0tMqT29.png",
+            "secondPicture":"https://i.imgur.com/PVzZ91E.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":9,
+            "testDescription":"Horizontal alignment of the icon.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/FF8bxYH.png",
+            "secondPicture":"https://i.imgur.com/FXkwh3t.png",
+            "level":"Easy"
+        },
+        {
+            "questionNumber":10,
+            "testDescription":"Vertical alignment of the text.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/S3DpG5i.png",
+            "secondPicture":"https://i.imgur.com/eh9VrFL.png",
+            "level":"Easy"
+        }
+    ],
+    "medium":[
+        {
+            "questionNumber":1,
+            "testDescription":"Horizontal alignment of the text.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/x7aKCGd.png",
+            "secondPicture":"https://i.imgur.com/Ppm8GIm.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":2,
+            "testDescription":"Position of the icon.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/6IGwhUN.png",
+            "secondPicture":"https://i.imgur.com/GloJg4G.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":3,
+            "testDescription":"Horizontal alignment of the list.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/otOHRfT.png",
+            "secondPicture":"https://i.imgur.com/0qa3qYq.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":4,
+            "testDescription":"Padding of the button.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/JlWx6wY.png",
+            "secondPicture":"https://i.imgur.com/8bKOqIl.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":5,
+            "testDescription":"Padding of the placeholder.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/L2wZZiZ.png",
+            "secondPicture":"https://i.imgur.com/wYcEUy4.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":6,
+            "testDescription":"Margin of the title.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/GfBALhh.png",
+            "secondPicture":"https://i.imgur.com/ePRG0s8.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":7,
+            "testDescription":"Horizontal alignment of the photo.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/n0qcq91.png",
+            "secondPicture":"https://i.imgur.com/zu1h5ii.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":8,
+            "testDescription":"Margin of the icon.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/hEnxuwI.png",
+            "secondPicture":"https://i.imgur.com/slovgHy.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":9,
+            "testDescription":"Padding of the text field.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/avzVva2.png",
+            "secondPicture":"https://i.imgur.com/JKbIpVI.png",
+            "level":"Medium"
+        },
+        {
+            "questionNumber":10,
+            "testDescription":"Vertical alignment of the text.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/u6jDu9D.png",
+            "secondPicture":"https://i.imgur.com/fs1wqHX.png",
+            "level":"Medium"
+        }
+    ],
+    "hard":[
+        {
+            "questionNumber":1,
+            "testDescription":"Border radius of the button.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/y6Ma7A2.png",
+            "secondPicture":"https://i.imgur.com/uOYp5N8.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":2,
+            "testDescription":"Vertical alignment of the icon.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/uwup1DL.png",
+            "secondPicture":"https://i.imgur.com/2tc22pV.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":3,
+            "testDescription":"Font color of the text.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/lSLMVA1.png",
+            "secondPicture":"https://i.imgur.com/0Pc7eeH.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":4,
+            "testDescription":"Layout of the icon.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/s214J2m.png",
+            "secondPicture":"https://i.imgur.com/XNhfEqe.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":5,
+            "testDescription":"Horizontal alignment of the icon.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/9pDn5Ld.png",
+            "secondPicture":"https://i.imgur.com/tLLW6pT.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":6,
+            "testDescription":"Horizontal alignment of the title.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/PviwVnq.png",
+            "secondPicture":"https://i.imgur.com/lJ9Ah8G.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":7,
+            "testDescription":"Horizontal alignment of the list.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/d1apg0l.png",
+            "secondPicture":"https://i.imgur.com/jxN0Hqz.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":8,
+            "testDescription":"Border of the text field.",
+            "answer":1,
+            "firstPicture":"https://i.imgur.com/PHkG5d6.png",
+            "secondPicture":"https://i.imgur.com/cH3n7Jh.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":9,
+            "testDescription":"Border radius of the button.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/k4IsfUi.png",
+            "secondPicture":"https://i.imgur.com/6KhMeuk.png",
+            "level":"Hard"
+        },
+        {
+            "questionNumber":10,
+            "testDescription":"Font size of the text.",
+            "answer":2,
+            "firstPicture":"https://i.imgur.com/v5XQbs6.png",
+            "secondPicture":"https://i.imgur.com/w1mlyXB.png",
+            "level":"Hard"
+        }
+    ]
+    
+}

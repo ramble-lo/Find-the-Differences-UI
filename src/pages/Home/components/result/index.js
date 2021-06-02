@@ -9,7 +9,7 @@ const Result = ({setIsFormalFinished}) => {
         <div className="result">
             {isInpitFinished ? <Score setIsFormalFinished={setIsFormalFinished}/> :  <Input setIsInpitFinished={setIsInpitFinished}/>}
             {/* <Input setIsInpitFinished={setIsInpitFinished}/> */}
-            <a href="https://github.com/s490607" target="_blank" rel="noreferrer noopener">Created by Rambo Lo<img src={GitHub} alt="GitHub" /></a>
+            <a href="https://github.com/s490607/Find-the-Differences-UI" target="_blank" rel="noreferrer noopener">Created by Rambo Lo<img src={GitHub} alt="GitHub" /></a>
         </div>
     )
 }

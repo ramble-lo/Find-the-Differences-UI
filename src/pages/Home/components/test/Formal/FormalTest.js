@@ -3,9 +3,8 @@ import Header from '../Header'
 import FormalContent from './FormalContent'
 import Footer from '../Footer'
 import {useDispatch} from 'react-redux'
-import {addTimeScoreArray} from '../../../../../actions/action'
-
-import data from '../../../../../mode/test.json'
+import {addTimeScoreArray,addUserAnswereArray} from '../../../../../actions/action'
+import data from '../../../../../mode/formal.json'
 
 const FormalTest = ({setIsFormalFinished}) => {
     const [testIndex, setTestIndex] = useState(0);
@@ -25,7 +24,7 @@ const FormalTest = ({setIsFormalFinished}) => {
     let level = [easy,medium,hard];
     let formalDataArrayLength = level[levelIndex].length;
     let loadingName = level[levelIndex][testIndex].level;
-
+    
     useEffect(() => {
         // let costTime = 0
 
@@ -35,6 +34,12 @@ const FormalTest = ({setIsFormalFinished}) => {
             dispatch(addTimeScoreArray(costTime))
         }
     }, [currentTime,dispatch])
+
+    useEffect(() => {
+        if(userAnswer !== 0){
+            dispatch(addUserAnswereArray(userAnswer))
+        }
+    }, [userAnswer,dispatch])
 
     return (
         <>  
