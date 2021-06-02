@@ -238,6 +238,10 @@ body {
   width: 100%;
   font-size: 16px;
   z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 .container-inside .result {
   display: flex;
