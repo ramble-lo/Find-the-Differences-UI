@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Find-the-Differences-UI/static/css/main.0a01cb56.chunk.css",
+    "main.css": "/Find-the-Differences-UI/static/css/main.c1ad61d3.chunk.css",
     "main.js": "/Find-the-Differences-UI/static/js/main.0bc8fc27.chunk.js",
     "main.js.map": "/Find-the-Differences-UI/static/js/main.0bc8fc27.chunk.js.map",
     "runtime-main.js": "/Find-the-Differences-UI/static/js/runtime-main.63f4070f.js",
@@ -8,7 +8,7 @@
     "static/js/2.0aa59131.chunk.js": "/Find-the-Differences-UI/static/js/2.0aa59131.chunk.js",
     "static/js/2.0aa59131.chunk.js.map": "/Find-the-Differences-UI/static/js/2.0aa59131.chunk.js.map",
     "index.html": "/Find-the-Differences-UI/index.html",
-    "static/css/main.0a01cb56.chunk.css.map": "/Find-the-Differences-UI/static/css/main.0a01cb56.chunk.css.map",
+    "static/css/main.c1ad61d3.chunk.css.map": "/Find-the-Differences-UI/static/css/main.c1ad61d3.chunk.css.map",
     "static/js/2.0aa59131.chunk.js.LICENSE.txt": "/Find-the-Differences-UI/static/js/2.0aa59131.chunk.js.LICENSE.txt",
     "static/media/Correct.7103ff20.svg": "/Find-the-Differences-UI/static/media/Correct.7103ff20.svg",
     "static/media/Facebook.da27a2e8.svg": "/Find-the-Differences-UI/static/media/Facebook.da27a2e8.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.63f4070f.js",
     "static/js/2.0aa59131.chunk.js",
-    "static/css/main.0a01cb56.chunk.css",
+    "static/css/main.c1ad61d3.chunk.css",
     "static/js/main.0bc8fc27.chunk.js"
   ]
 }
