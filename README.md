@@ -19,19 +19,11 @@ npm install
 ```
 
 ## User Interface
-### test/Begin/BeginTest & BeginContent
-![BeginTest & BeginContent01](https://user-images.githubusercontent.com/58504170/138478368-7ebeb8c0-db64-49ca-9f1e-cf90ececec79.png)
+### Start the game
+![start](https://user-images.githubusercontent.com/58504170/140631368-5574ec16-1540-4f8e-a2e7-6cb7c0176b59.gif)
 
-### test/Formal/FormalTest & FormalContent
-![FormalTest & FormalContent01](https://user-images.githubusercontent.com/58504170/138478628-363ec723-4529-4a98-ad86-73c3da7f8127.png)
-![FormalTest & FormalContent02](https://user-images.githubusercontent.com/58504170/138478677-f3e9014e-d63e-4201-a4cd-ebfcf1245a0b.png)
-
-### result/Input
-![Input01](https://user-images.githubusercontent.com/58504170/138478902-110c4dac-fe4d-48ec-a5cd-6ccd09463c78.png)
-
-### result/Score
-![Score01](https://user-images.githubusercontent.com/58504170/138479007-b9a17db2-92e9-4fde-a757-8a398c145d44.png)
-
+### Submitting scores
+![result](https://user-images.githubusercontent.com/58504170/140631363-3c71ff65-bdd4-4156-9aeb-572fbf45dec6.gif)
 
 ### Start App
 
